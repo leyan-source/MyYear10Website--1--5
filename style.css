@@ -1,80 +1,120 @@
-/* A simple css reset */
+/* Reset and base */
 body,
 html {
     margin: 0;
     padding: 0;
     height: 100%;
-    /* The Font Family- Really important!! */
     font-family: Arial, sans-serif;
     box-sizing: border-box;
+    background-color: #fffdee;
 }
 
-/* reset for images to ensure they ar 100% of the parent container width */
 img {
     width: 100%;
 }
 
-/* The hero section styling- use your OWN Hero Image URL here */
+/* Navbar */
+.navbar {
+    background-color: #fffacd; /* light yellow */
+    padding: 1em 0;
+    text-align: center;
+}
+
+.navbar ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* center links */
+    flex-wrap: wrap;         /* wrap if too long */
+    gap: 1em;
+}
+
+.navbar li {
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #ffb6c1; /* light pink */
+    font-weight: bold;
+    font-size: 1em;
+    padding: 0.5em 1em;
+    border-radius: 0.5em;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.navbar a:hover {
+    background-color: #ffb6c1;
+    color: #fffacd;
+}
+
+/* Hero Section */
 .hero {
-    background-image: url('images/techquitybanner-1130x160.png');
+    background-image: url('images/mybanner.png');
     height: 25vh;
     background-size: cover;
     background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
-    color: white;
     text-align: center;
     position: relative;
 }
 
-/* BIG text styling for the hero section text */
 .hero-text {
     font-size: 4em;
     font-weight: bold;
+    color: #ffb6c1;
 }
 
-/* nice big font on a banner style background */
-.topic-title{
-    color: white;
+/* Topic Section */
+.topic-title {
+    color: #333333;
     font-size: 2em;
-    padding: 0.1em 3em;
-    background-color: rgb(71, 71, 71);
+    padding: 0.2em 3em;
+    background-color: #fffacd;
 }
 
-/* Three column grid with a nice big gap */
-.topic-content{
+.topic-content {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 6em;
-    /* bring the whole section in off the sides of the page */
+    gap: 4em;
     width: 70%;
-    /* top margin of 3em and center right/left */
     margin: 3em auto;
 }
 
-/* Styling for the individual topic cards rounded edges background color and a drop shadow */
-.topic-card{
-    background-color: rgb(71, 71, 71);
-    color: white;
+.topic-card {
+    background-color: #ffe0e6;
+    color: #333333;
     padding: 1em;
     border-radius: 0.5em;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
 }
 
-/* Styling for the topic card titles */
-.topic-card-text{
+.topic-card:hover {
+    transform: translateY(-10px);
+}
+
+.topic-card-text {
     font-size: 1.5em;
     margin-bottom: 0.5em;
-    /* center align text */
     text-align: center;
 }
 
+/* Fix images inside topic cards */
+.topic-card img {
+    width: 100%;
+    max-width: 300px; /* prevent huge images */
+    height: auto;
+    margin: 0 auto;
+    display: block;
+}
 
-/* Styling for a footer section to take a bit of spcae at the bottom of the page */
-.footer{
-    background-color: rgb(71, 71, 71);
-    color: white;
+/* Footer */
+.footer {
+    background-color: #fffacd;
+    color: #333333;
     text-align: right;
     padding: 3em 3em;
 }
