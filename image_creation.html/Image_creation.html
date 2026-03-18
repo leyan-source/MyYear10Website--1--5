@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Image Creation</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Background & body styling */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f4f8; /* nice light background */
+        }
+
+        /* Navbar styling */
+        .navbar {
+            background-color: #333;
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 10px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+        .navbar li {
+            margin-right: 15px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .navbar a:hover {
+            text-decoration: underline;
+        }
+
+        /* Hero section */
+        .hero {
+            text-align: center;
+            padding: 30px 0;
+        }
+        .hero-text {
+            font-size: 2rem;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* Topic cards container */
+        .topic-content {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            padding: 20px;
+        }
+
+        /* Individual topic card */
+        .topic-card {
+            width: 250px;
+            border: 1px solid #ccc;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 5px 10px rgba(0,0,0,0.1);
+            text-align: center;
+            background-color: white;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+        .topic-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 15px rgba(0,0,0,0.2);
+        }
+
+        .topic-card img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .topic-card-text {
+            padding: 10px 0;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navbar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Image_creation.html">Image Creation</a></li>
+            <li><a href="website.html">Website</a></li>
+            <li><a href="computer_science.html">Computer Science</a></li>
+            <li><a href="python.html">Programming with Python</a></li>
+            <li><a href="3d_modelling.html">3D Modelling</a></li>
+            <li><a href="animation.html">Animation</a></li>
+            <li><a href="design_for_manufacturing.html">Design for Manufacturing</a></li>
+            <li><a href="audio_visual.html">Audio Visual</a></li>
+            <li><a href="video_game_development.html">Video Game Development</a></li>
+            <li><a href="student_lead_project.html">Student Lead Project</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-text">Image Creation</div>
+    </section>
+
+    <!-- Topic Cards -->
+    <section class="topic-content">
+        <div class="topic-card">
+            <img src="images/moutain.png" alt="Mountain Image">
+            <h2 class="topic-card-text">Mountain Creation</h2>
+        </div>
+    </section>
+
+</body>
+</html>
