@@ -20,7 +20,7 @@ body {
     background-color: #ffdce6;
     padding: 18px;
     border-radius: 0 0 30px 30px;
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
 .navbar ul {
@@ -42,7 +42,7 @@ body {
     color: #c9829b;
 }
 
-/* Banner */
+/* Hero Banner */
 
 .hero {
     background-color: #ffe8ef;
@@ -53,7 +53,7 @@ body {
     text-align: center;
     padding: 30px;
     border-radius: 0 0 40px 40px;
-    margin-bottom: 50px;
+    margin-bottom: 45px;
 }
 
 .hero-text {
@@ -69,14 +69,14 @@ body {
 
 .hero-text p {
     font-size: 17px;
-    line-height: 1.7;
+    line-height: 1.6;
     color: #7b665e;
 }
 
 /* Sections */
 
 .topic {
-    padding: 50px 40px;
+    padding: 45px 40px;
 }
 
 .topic-title {
@@ -86,8 +86,8 @@ body {
 
 .topic-title h1 {
     font-family: "Playfair Display", serif;
-    font-size: 36px;
     color: #c9829b;
+    font-size: 36px;
 }
 
 /* Cards */
@@ -100,13 +100,13 @@ body {
 }
 
 .topic-card {
+    background-color: #ffffff;
     width: 320px;
-    background-color: white;
-    border: 3px solid #ffd6e3;
+    padding: 22px;
     border-radius: 30px;
-    padding: 20px;
+    border: 3px solid #ffd6e3;
+    box-shadow: 0 8px 20px rgba(201,130,155,0.18);
     text-align: center;
-    box-shadow: 0 8px 18px rgba(201,130,155,0.18);
     transition: 0.3s;
 }
 
@@ -136,22 +136,38 @@ body {
     color: #6b5650;
 }
 
-/* Video */
+/* Audio Visual Card */
 
-video {
+.video-card {
+    width: 65%;
+    max-width: 750px;
+    padding: 30px;
+}
+
+.video-card video {
     width: 100%;
     border-radius: 20px;
-    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.12);
+}
+
+/* Image Creation */
+
+.image-card {
+    width: 500px;
+}
+
+.image-card img {
+    height: auto;
 }
 
 /* Footer */
 
 .footer {
-    background-color: #ffdce6;
-    color: #795548;
-    text-align: center;
-    padding: 20px;
     margin-top: 50px;
+    background-color: #ffdce6;
+    padding: 20px;
+    text-align: center;
     border-radius: 30px 30px 0 0;
+    color: #795548;
     font-weight: 500;
 }
